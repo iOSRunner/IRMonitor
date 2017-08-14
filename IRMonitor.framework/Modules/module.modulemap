@@ -1,0 +1,6 @@
+framework module IRMonitor {
+  umbrella header "IRMonitor.h"
+
+  export *
+  module * { export * }
+}
