@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface IRTrackManager : NSObject
+@interface IRMonitorManager : NSObject
 
 
 - (void)trackEvent:(NSString *)event;

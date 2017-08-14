@@ -7,15 +7,15 @@
 	objects = {
 
 /* Begin PBXAggregateTarget section */
-		F747C2B31ECC78090091B946 /* IRTrackerCombiner */ = {
+		F747C2B31ECC78090091B946 /* IRMonitorCombiner */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = F747C2B41ECC78090091B946 /* Build configuration list for PBXAggregateTarget "IRTrackerCombiner" */;
+			buildConfigurationList = F747C2B41ECC78090091B946 /* Build configuration list for PBXAggregateTarget "IRMonitorCombiner" */;
 			buildPhases = (
 				F747C2B71ECC78350091B946 /* ShellScript */,
 			);
 			dependencies = (
 			);
-			name = IRTrackerCombiner;
+			name = IRMonitorCombiner;
 			productName = DTTrackerCombiner;
 		};
 /* End PBXAggregateTarget section */
@@ -23,9 +23,9 @@
 /* Begin PBXBuildFile section */
 		1F33945BF8B08F88B756B79A /* libPods-IRTracker.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 36C2F93D8CC53AC149B0C9B0 /* libPods-IRTracker.a */; };
 		F70113B31F1F4A010077A178 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F70113AF1F1F4A010077A178 /* Info.plist */; };
-		F70113B41F1F4A010077A178 /* IRTracker.h in Headers */ = {isa = PBXBuildFile; fileRef = F70113B01F1F4A010077A178 /* IRTracker.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F70113B51F1F4A010077A178 /* IRTrackManager.h in Headers */ = {isa = PBXBuildFile; fileRef = F70113B11F1F4A010077A178 /* IRTrackManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F70113B61F1F4A010077A178 /* IRTrackManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F70113B21F1F4A010077A178 /* IRTrackManager.m */; };
+		F70113B41F1F4A010077A178 /* IRMonitor.h in Headers */ = {isa = PBXBuildFile; fileRef = F70113B01F1F4A010077A178 /* IRMonitor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F70113B51F1F4A010077A178 /* IRMonitorManager.h in Headers */ = {isa = PBXBuildFile; fileRef = F70113B11F1F4A010077A178 /* IRMonitorManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F70113B61F1F4A010077A178 /* IRMonitorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F70113B21F1F4A010077A178 /* IRMonitorManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,10 +33,10 @@
 		E1479A3650C317D0B2701B1E /* Pods-IRTracker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IRTracker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IRTracker/Pods-IRTracker.debug.xcconfig"; sourceTree = "<group>"; };
 		E9A9CBA6F74D5829894B82B7 /* Pods-IRTracker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IRTracker.release.xcconfig"; path = "Pods/Target Support Files/Pods-IRTracker/Pods-IRTracker.release.xcconfig"; sourceTree = "<group>"; };
 		F70113AF1F1F4A010077A178 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F70113B01F1F4A010077A178 /* IRTracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRTracker.h; sourceTree = "<group>"; };
-		F70113B11F1F4A010077A178 /* IRTrackManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRTrackManager.h; sourceTree = "<group>"; };
-		F70113B21F1F4A010077A178 /* IRTrackManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IRTrackManager.m; sourceTree = "<group>"; };
-		F7C4FD161ECC748900C3EBCC /* IRTracker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = IRTracker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F70113B01F1F4A010077A178 /* IRMonitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRMonitor.h; sourceTree = "<group>"; };
+		F70113B11F1F4A010077A178 /* IRMonitorManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRMonitorManager.h; sourceTree = "<group>"; };
+		F70113B21F1F4A010077A178 /* IRMonitorManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IRMonitorManager.m; sourceTree = "<group>"; };
+		F7C4FD161ECC748900C3EBCC /* IRMonitor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = IRMonitor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,21 +68,22 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		F70113AE1F1F4A010077A178 /* DTTracker */ = {
+		F70113AE1F1F4A010077A178 /* DTMonitor */ = {
 			isa = PBXGroup;
 			children = (
 				F70113AF1F1F4A010077A178 /* Info.plist */,
-				F70113B01F1F4A010077A178 /* IRTracker.h */,
-				F70113B11F1F4A010077A178 /* IRTrackManager.h */,
-				F70113B21F1F4A010077A178 /* IRTrackManager.m */,
+				F70113B01F1F4A010077A178 /* IRMonitor.h */,
+				F70113B11F1F4A010077A178 /* IRMonitorManager.h */,
+				F70113B21F1F4A010077A178 /* IRMonitorManager.m */,
 			);
+			name = DTMonitor;
 			path = DTTracker;
 			sourceTree = "<group>";
 		};
 		F7C4FD0C1ECC748900C3EBCC = {
 			isa = PBXGroup;
 			children = (
-				F70113AE1F1F4A010077A178 /* DTTracker */,
+				F70113AE1F1F4A010077A178 /* DTMonitor */,
 				F7C4FD171ECC748900C3EBCC /* Products */,
 				C49D641369E2D9838BC02313 /* Pods */,
 				D9A9A136B1382082417946D9 /* Frameworks */,
@@ -92,7 +93,7 @@
 		F7C4FD171ECC748900C3EBCC /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F7C4FD161ECC748900C3EBCC /* IRTracker.framework */,
+				F7C4FD161ECC748900C3EBCC /* IRMonitor.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -104,17 +105,17 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F70113B41F1F4A010077A178 /* IRTracker.h in Headers */,
-				F70113B51F1F4A010077A178 /* IRTrackManager.h in Headers */,
+				F70113B41F1F4A010077A178 /* IRMonitor.h in Headers */,
+				F70113B51F1F4A010077A178 /* IRMonitorManager.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		F7C4FD151ECC748900C3EBCC /* IRTracker */ = {
+		F7C4FD151ECC748900C3EBCC /* IRMonitor */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F7C4FD1E1ECC748900C3EBCC /* Build configuration list for PBXNativeTarget "IRTracker" */;
+			buildConfigurationList = F7C4FD1E1ECC748900C3EBCC /* Build configuration list for PBXNativeTarget "IRMonitor" */;
 			buildPhases = (
 				1C65D9356B81961DC69F7BDF /* [CP] Check Pods Manifest.lock */,
 				F7C4FD111ECC748900C3EBCC /* Sources */,
@@ -127,9 +128,9 @@
 			);
 			dependencies = (
 			);
-			name = IRTracker;
+			name = IRMonitor;
 			productName = DTTracker;
-			productReference = F7C4FD161ECC748900C3EBCC /* IRTracker.framework */;
+			productReference = F7C4FD161ECC748900C3EBCC /* IRMonitor.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -153,7 +154,7 @@
 					};
 				};
 			};
-			buildConfigurationList = F7C4FD101ECC748900C3EBCC /* Build configuration list for PBXProject "IRTracker" */;
+			buildConfigurationList = F7C4FD101ECC748900C3EBCC /* Build configuration list for PBXProject "IRMonitor" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -165,8 +166,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F7C4FD151ECC748900C3EBCC /* IRTracker */,
-				F747C2B31ECC78090091B946 /* IRTrackerCombiner */,
+				F7C4FD151ECC748900C3EBCC /* IRMonitor */,
+				F747C2B31ECC78090091B946 /* IRMonitorCombiner */,
 			);
 		};
 /* End PBXProject section */
@@ -233,7 +234,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F70113B61F1F4A010077A178 /* IRTrackManager.m in Sources */,
+				F70113B61F1F4A010077A178 /* IRMonitorManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,7 +433,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		F747C2B41ECC78090091B946 /* Build configuration list for PBXAggregateTarget "IRTrackerCombiner" */ = {
+		F747C2B41ECC78090091B946 /* Build configuration list for PBXAggregateTarget "IRMonitorCombiner" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F747C2B51ECC78090091B946 /* Debug */,
@@ -441,7 +442,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F7C4FD101ECC748900C3EBCC /* Build configuration list for PBXProject "IRTracker" */ = {
+		F7C4FD101ECC748900C3EBCC /* Build configuration list for PBXProject "IRMonitor" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F7C4FD1C1ECC748900C3EBCC /* Debug */,
@@ -450,7 +451,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F7C4FD1E1ECC748900C3EBCC /* Build configuration list for PBXNativeTarget "IRTracker" */ = {
+		F7C4FD1E1ECC748900C3EBCC /* Build configuration list for PBXNativeTarget "IRMonitor" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F7C4FD1F1ECC748900C3EBCC /* Debug */,

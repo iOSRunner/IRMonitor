@@ -6,9 +6,9 @@
 //  Copyright © 2017年 organizer. All rights reserved.
 //
 
-#import "IRTrackManager.h"
+#import "IRMonitorManager.h"
 
-@implementation IRTrackManager
+@implementation IRMonitorManager
 
 - (void)trackEvent:(NSString *)event {
     NSLog(@"%s, %d", __func__, __LINE__);
