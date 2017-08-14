@@ -21,8 +21,6 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		1F33945BF8B08F88B756B79A /* libPods-IRTracker.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 36C2F93D8CC53AC149B0C9B0 /* libPods-IRTracker.a */; };
-		B80E9270CBF7972D67DA50C3 /* libPods-IRMonitor.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C9D0DED286809ABDE6B78C8C /* libPods-IRMonitor.a */; };
 		F70113B31F1F4A010077A178 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F70113AF1F1F4A010077A178 /* Info.plist */; };
 		F70113B41F1F4A010077A178 /* IRMonitor.h in Headers */ = {isa = PBXBuildFile; fileRef = F70113B01F1F4A010077A178 /* IRMonitor.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F70113B51F1F4A010077A178 /* IRMonitorManager.h in Headers */ = {isa = PBXBuildFile; fileRef = F70113B11F1F4A010077A178 /* IRMonitorManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -48,8 +46,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1F33945BF8B08F88B756B79A /* libPods-IRTracker.a in Frameworks */,
-				B80E9270CBF7972D67DA50C3 /* libPods-IRMonitor.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
