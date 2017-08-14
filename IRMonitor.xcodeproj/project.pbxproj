@@ -22,6 +22,7 @@
 
 /* Begin PBXBuildFile section */
 		1F33945BF8B08F88B756B79A /* libPods-IRTracker.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 36C2F93D8CC53AC149B0C9B0 /* libPods-IRTracker.a */; };
+		B80E9270CBF7972D67DA50C3 /* libPods-IRMonitor.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C9D0DED286809ABDE6B78C8C /* libPods-IRMonitor.a */; };
 		F70113B31F1F4A010077A178 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F70113AF1F1F4A010077A178 /* Info.plist */; };
 		F70113B41F1F4A010077A178 /* IRMonitor.h in Headers */ = {isa = PBXBuildFile; fileRef = F70113B01F1F4A010077A178 /* IRMonitor.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F70113B51F1F4A010077A178 /* IRMonitorManager.h in Headers */ = {isa = PBXBuildFile; fileRef = F70113B11F1F4A010077A178 /* IRMonitorManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -30,6 +31,9 @@
 
 /* Begin PBXFileReference section */
 		36C2F93D8CC53AC149B0C9B0 /* libPods-IRTracker.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-IRTracker.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6BD4301AD860671E961B295D /* Pods-IRMonitor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IRMonitor.release.xcconfig"; path = "Pods/Target Support Files/Pods-IRMonitor/Pods-IRMonitor.release.xcconfig"; sourceTree = "<group>"; };
+		95E4C5CB146B460ACF8BF010 /* Pods-IRMonitor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IRMonitor.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IRMonitor/Pods-IRMonitor.debug.xcconfig"; sourceTree = "<group>"; };
+		C9D0DED286809ABDE6B78C8C /* libPods-IRMonitor.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-IRMonitor.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1479A3650C317D0B2701B1E /* Pods-IRTracker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IRTracker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IRTracker/Pods-IRTracker.debug.xcconfig"; sourceTree = "<group>"; };
 		E9A9CBA6F74D5829894B82B7 /* Pods-IRTracker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IRTracker.release.xcconfig"; path = "Pods/Target Support Files/Pods-IRTracker/Pods-IRTracker.release.xcconfig"; sourceTree = "<group>"; };
 		F70113AF1F1F4A010077A178 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -45,6 +49,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F33945BF8B08F88B756B79A /* libPods-IRTracker.a in Frameworks */,
+				B80E9270CBF7972D67DA50C3 /* libPods-IRMonitor.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +61,8 @@
 			children = (
 				E1479A3650C317D0B2701B1E /* Pods-IRTracker.debug.xcconfig */,
 				E9A9CBA6F74D5829894B82B7 /* Pods-IRTracker.release.xcconfig */,
+				95E4C5CB146B460ACF8BF010 /* Pods-IRMonitor.debug.xcconfig */,
+				6BD4301AD860671E961B295D /* Pods-IRMonitor.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -64,6 +71,7 @@
 			isa = PBXGroup;
 			children = (
 				36C2F93D8CC53AC149B0C9B0 /* libPods-IRTracker.a */,
+				C9D0DED286809ABDE6B78C8C /* libPods-IRMonitor.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -196,7 +204,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IRTracker/Pods-IRTracker-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IRMonitor/Pods-IRMonitor-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		1C65D9356B81961DC69F7BDF /* [CP] Check Pods Manifest.lock */ = {
@@ -357,7 +365,7 @@
 		};
 		F7C4FD1F1ECC748900C3EBCC /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E1479A3650C317D0B2701B1E /* Pods-IRTracker.debug.xcconfig */;
+			baseConfigurationReference = 95E4C5CB146B460ACF8BF010 /* Pods-IRMonitor.debug.xcconfig */;
 			buildSettings = {
 				ARCHS = (
 					"$(ARCHS_STANDARD)",
@@ -395,7 +403,7 @@
 		};
 		F7C4FD201ECC748900C3EBCC /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E9A9CBA6F74D5829894B82B7 /* Pods-IRTracker.release.xcconfig */;
+			baseConfigurationReference = 6BD4301AD860671E961B295D /* Pods-IRMonitor.release.xcconfig */;
 			buildSettings = {
 				ARCHS = (
 					"$(ARCHS_STANDARD)",

@@ -5,7 +5,7 @@ platform :ios, '8.0'
 ali_source 'alibaba-specs'
 ali_source 'alibaba-specs-mirror'
 
-target "IRTracker" do
+target "IRMonitor" do
     
     #pod 'AFNetworking'
     
